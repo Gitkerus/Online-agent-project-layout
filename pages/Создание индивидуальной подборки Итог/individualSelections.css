@@ -1,0 +1,458 @@
+@import url(../../fonts.css);
+@import url(../../header.css);
+@import url(../../fonts/stylesheet.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.backMobile {
+  display: none;
+}
+
+.infoTopWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin-bottom: 22px;
+}
+
+.info__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 69px;
+  width: 289px;
+  background: #fccd5b;
+  border-radius: 83.6364px;
+}
+
+.info__btn span,
+.container__info__btnMobile span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+
+.info__desc__head {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.info__desc__head__price,
+.info__desc__head__phone,
+.info__desc__phoneMobile {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.info__desc__head__phone,
+.info__desc__phoneMobile {
+  color: #9c9487;
+}
+
+.info__desc__head__price {
+  color: #d49702;
+}
+
+.info__desc__head__priceArea {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.015em;
+  color: #b5b5b5;
+  margin-left: 15px;
+  margin-right: 71px;
+}
+
+.info__desc__head__priceArea sup {
+  font-size: 11.0266px;
+  line-height: 153.19%;
+}
+
+.info__desc__phoneMobile {
+  display: none;
+}
+
+.info__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__header__adress {
+  margin-bottom: 14px;
+}
+
+.info__desc__ownerDate {
+  display: flex;
+  gap: 43px;
+  margin-bottom: 12px;
+}
+
+.info__header__adress,
+.info__header__subway,
+.info__desc__ownerDate,
+.info__desc__note {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #9c9487;
+}
+
+.info__header__subway {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.info__header__subway img {
+  height: 22px;
+  width: 18px;
+}
+
+.info__header__sum {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.info__header__sum__name {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 33px;
+  letter-spacing: 0.297748px;
+  color: #000000;
+  margin-right: 41px;
+}
+
+.info__header__sum__area,
+.info__header__sum__level {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #9c9487;
+}
+
+.info__header__sum__area {
+  margin-right: 27px;
+}
+
+.info__header__sum__area sup {
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 18px;
+}
+
+.container__info {
+  width: 100%;
+}
+
+.container__photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 14px;
+  min-width: 289px;
+  height: 391px;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.container__photos__big {
+  position: relative;
+  width: 100%;
+  height: 289px;
+  background: url(../../assets/photo-big.svg) no-repeat;
+  background-size: cover;
+}
+
+.container__photos__big img {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+
+.container__photos__small {
+  width: calc((100% - 14px) / 2);
+  height: 88px;
+  background: url(../../assets/photo-small.svg) no-repeat;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+
+.content__container {
+  display: flex;
+  gap: 30px;
+  background: linear-gradient(211.17deg, #ffffff 0%, #ffffff 100%);
+  backdrop-filter: blur(101.166px);
+  border-radius: 8.09329px;
+  padding: 41px 61px;
+  margin-bottom: 32px;
+}
+
+.content__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 39px 0 32px;
+}
+
+.content__header__edit > img {
+  height: 17px;
+  width: 18px;
+  margin-right: 18px;
+}
+
+.content__header__edit > span {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #d49702;
+}
+
+.content__header__text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.374px;
+  color: #000000;
+  margin-right: 37px;
+}
+
+.content__share {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 31px;
+}
+
+.content__share__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 344px;
+  height: 69px;
+  background: #fac543;
+  border-radius: 83.6364px;
+}
+
+.content__share__btn span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175.19%;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #866107;
+}
+
+.content__share__note {
+  resize: none;
+  outline: none;
+  border: none;
+  background: #ffffff;
+  border-radius: 4.06706px;
+  height: 44px;
+  width: 279px;
+  padding: 19px 28px;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #9c9487;
+}
+
+.content__share__note::placeholder {
+  color: #c4c4c4;
+  opacity: 1;
+}
+
+.content__share__note:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.content__share__note::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.contentWrapper {
+  min-height: calc(100vh - 69px);
+  min-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f7f7;
+  justify-content: space-between;
+}
+
+/* Адаптив */
+
+@media screen and (max-width: 1600px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    width: 90%;
+  }
+
+  .content__container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container__photos {
+    order: 1;
+    height: auto;
+    margin-bottom: 19px;
+  }
+
+  .container__photos__small {
+    min-height: 183px;
+    min-width: 136px;
+    width: auto;
+    height: auto;
+  }
+
+  .container__photos__big {
+    min-height: 183px;
+    min-width: 161px;
+    width: auto;
+    height: auto;
+  }
+
+  .container__photos__big img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container__info__btnMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 69px;
+    width: 100%;
+    background: #fccd5b;
+    border-radius: 83.6364px;
+    order: 2;
+  }
+
+  .container__photos {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .content {
+    width: calc(100% - 30px);
+  }
+
+  .content__header {
+    position: relative;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  .content__header__edit img {
+    margin: 0;
+  }
+
+  .content__header__edit span {
+    display: none;
+  }
+
+  .content__header__searchMobile {
+    display: block;
+  }
+
+  .content__header__textMobile {
+    display: block;
+    width: 100%;
+    font-family: "Museo Sans Cyrl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 153%;
+    letter-spacing: 0.015em;
+    color: #818181;
+    margin-bottom: 8px;
+  }
+
+  .content__share {
+    flex-direction: column;
+  }
+
+  .content__share__btn,
+  .content__container {
+    width: 100%;
+  }
+
+  .content__share__note {
+    width: calc(100% - 56px);
+  }
+
+  .content__container {
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    padding: 45px 15px;
+  }
+
+  .contentWrapper {
+    min-height: 100vh;
+  }
+
+  .backMobile {
+    margin-top: 65px;
+    display: block;
+  }
+
+  .info__btn {
+    display: none;
+  }
+
+  .info__desc__head__phone {
+    display: none;
+  }
+
+  .info__desc__phoneMobile {
+    display: block;
+    margin-bottom: 11px;
+  }
+}

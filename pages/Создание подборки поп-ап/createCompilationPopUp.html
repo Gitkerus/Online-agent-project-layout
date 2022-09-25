@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>createCompilationPopUp</title>
+    <link rel="stylesheet" href="createCompilationPopup.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Orbitron&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <div class="logo">
+            <img src="../../assets/logo.svg" alt="logo-small" />
+            <p>Онлайн Агент</p>
+          </div>
+          <div class="city-switcher">
+            <img
+              class="map-pointer"
+              src="../../assets/map-pointer.svg"
+              alt="map-pointer"
+            />
+            <p>Казань</p>
+            <div>
+              <img src="../../assets/arrowDown.svg" alt="arrowDown" />
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="navbar__component navbar__component-clicked">
+              <img
+                class="navbar-icon"
+                src="../../assets/create.svg"
+                alt="create"
+              />
+              <p>Создать подборку</p>
+            </div>
+            <div class="navbar__component">
+              <img class="navbar-icon" src="../../assets/home.svg" alt="home" />
+              <p>Мои подборки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/documents.svg"
+                alt="documents"
+              />
+              <p>Мои заявки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/about.svg"
+                alt="about"
+              />
+              <p>О сервисе</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="contentWrapper">
+        <div class="navbarMobile">
+          <img
+            src="../../assets/sandwichBtn-mobile.svg"
+            alt="sandwichBtn-mobile"
+          />
+          <img src="../../assets/home-mobile.svg" alt="home-mobile" />
+          <img src="../../assets/create-mobile.svg" alt="create-mobile" />
+        </div>
+        <div class="content">
+          <div class="content__header">
+            <p class="content__header__text">Создать подборку</p>
+            <div class="content__header__mobileCityChange">
+              <span> Казань </span>
+              <img
+                src="../../assets/arrowDownMobile.svg"
+                alt="arrowDownMobile"
+              />
+            </div>
+          </div>
+          <div class="content__container">
+            <div class="containerParams">
+              <div class="switcher">
+                <div class="switcher__btn switcher__btn-clicked">
+                  <p class="switcher__btn__text">Аренда</p>
+                </div>
+                <div class="switcher__btn">
+                  <p class="switcher__btn__text">Продажа</p>
+                </div>
+              </div>
+              <div class="realEstate">
+                <div class="realEstate__btn">
+                  <span>Жилая недвижимость</span>
+                </div>
+                <div class="realEstate__btn">
+                  <span>Коммерческая недвижимость</span>
+                </div>
+              </div>
+              <div class="rooms">
+                <div class="rooms__header">
+                  <span>Комнат</span>
+                </div>
+                <div class="rooms__btn">
+                  <span>1</span>
+                </div>
+                <div class="rooms__btn">
+                  <span>2</span>
+                </div>
+                <div class="rooms__btn">
+                  <span>3</span>
+                </div>
+                <div class="rooms__btn">
+                  <span>4+</span>
+                </div>
+                <div class="rooms__btn">
+                  <span>Комната</span>
+                </div>
+                <div class="rooms__btn">
+                  <span>Студия</span>
+                </div>
+              </div>
+              <div class="price">
+                <div class="price__header">
+                  <span>Цена</span>
+                </div>
+                <div class="price__inputs">
+                  <div class="price__inputs__inputWrapper">
+                    <input type="text" placeholder="От" />
+                    <span>₽</span>
+                  </div>
+                  <div class="price__inputs__inputWrapper">
+                    <input type="text" placeholder="До" />
+                    <span>₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="priceSwitcher">
+                <span class="priceSwitcher__beforeText">Общая</span>
+                <label class="custom-switcher">
+                  <input type="checkbox" class="custom-checkbox" checked />
+                  <span class="custom-slider"></span>
+                </label>
+                <span class="priceSwitcher__afterText">За кв. м.</span>
+              </div>
+              <div class="area">
+                <div class="area__header">
+                  <span>Площадь</span>
+                </div>
+                <div class="area__inputs">
+                  <div class="area__inputs__inputWrapper">
+                    <input type="text" placeholder="От" />
+                    <span>м<sup>2</sup></span>
+                  </div>
+                  <div class="area__inputs__inputWrapper">
+                    <input type="text" placeholder="До" />
+                    <span>м<sup>2</sup></span>
+                  </div>
+                </div>
+              </div>
+              <div class="levels">
+                <div class="levels__header">
+                  <span>Этаж</span>
+                </div>
+                <div class="levels__inputs">
+                  <div class="levels__inputs__inputWrapper">
+                    <input type="text" placeholder="С" />
+                  </div>
+                  <div class="levels__inputs__inputWrapper">
+                    <input type="text" placeholder="По" />
+                  </div>
+                </div>
+              </div>
+              <div class="levelsBtns">
+                <div class="levelsBtns__block">
+                  <span>Последний</span>
+                </div>
+                <div class="levelsBtns__block">
+                  <span>Не последний</span>
+                </div>
+                <div class="levelsBtns__block">
+                  <span>Не первый</span>
+                </div>
+              </div>
+              <div class="subway">
+                <div class="subway__header">
+                  <span>До метро</span>
+                </div>
+                <div class="subway__inputs">
+                  <div class="subway__inputs__inputWrapper">
+                    <img src="../../assets/footer.svg" alt="footer" />
+                    <span>не важно</span>
+                    <img
+                      src="../../assets/arrowDownSubway.svg"
+                      alt="arrowDownSubway"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="subwaySearch">
+                <img src="../../assets/metroIcon.svg" alt="metroIcon" />
+                <input type="text" placeholder="Станция метро, ветка, район" />
+                <img src="../../assets/arrowRight.svg" alt="arrowRight" />
+              </div>
+              <div class="mapSearch">
+                <img
+                  src="../../assets/map-ponter-white.svg"
+                  alt="map-pointer-white"
+                />
+                <span>Адрес, район, область</span>
+              </div>
+            </div>
+            <div class="containerCreate">
+              <div class="containerCreate__settings">
+                <div class="containerCreate__settings__startDate">
+                  <span>Собирать объявления от</span>
+                  <div class="startDate__wrapper">
+                    <input type="text" placeholder="2021 03 02" />
+
+                    <img src="../../assets/calendar.svg" alt="calendar" />
+                  </div>
+                </div>
+                <div class="containerCreate__settings__agents">
+                  <span>Включить объявления от агентов</span>
+                  <label class="custom-switcher">
+                    <input type="checkbox" class="custom-checkbox" checked />
+                    <span class="custom-slider"></span>
+                  </label>
+                </div>
+                <div class="containerCreate__settings__name">
+                  <input type="text" placeholder="Название" />
+                </div>
+                <div class="containerCreate__settings__comment">
+                  <textarea
+                    id="containerCreate__settings__comment__textArea"
+                    placeholder="Комментарий"
+                  ></textarea>
+                </div>
+                <div class="containerCreate__settings__phones">
+                  <span>Номера телефонов</span>
+                  <div class="containerCreate__settings__phones__switcher">
+                    <label class="custom-switcher">
+                      <input type="checkbox" class="custom-checkbox" checked />
+                      <span class="custom-slider"></span>
+                    </label>
+                    <span>Показывать</span>
+                  </div>
+                </div>
+                <div class="containerCreate__settings__linkExpire">
+                  <span>Ссылка активна</span>
+                  <div class="expireDate__wrapper">
+                    <span>бессрочно</span>
+                    <img
+                      src="../../assets/calendar-small.svg"
+                      alt="calendar-small"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="containerCreate__btn">
+                <span>Создать подборку</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modalContent modalContent-open">
+          <div class="modalSidebar">
+            <img src="../../assets/sideBarBtn.svg" alt="sideBarBtn" />
+          </div>
+          <div class="modalContainer">
+            <div class="modalContainer__mobileCloseLine"></div>
+            <img
+              class="modalContainer__createPopUp"
+              src="../../assets/createPopUp.svg"
+              alt="createPopUp"
+            />
+            <img
+              class="modalContainer__createPopUpMobile"
+              src="../../assets/createPopUpMobile.svg"
+              alt="createPopUpMobile"
+            />
+            <img
+              class="modalContainer__closeBtn"
+              src="../../assets/modalCloseBtn.svg"
+              alt="modalCloseBtn"
+            />
+            <div class="modalContainer__date">
+              <div class="modalContainer__date__expire">
+                <label class="custom-switcher">
+                  <input type="checkbox" class="custom-checkbox" checked />
+                  <span class="custom-slider"></span>
+                </label>
+                <p>Активна до: 29 марта 2021</p>
+              </div>
+              <div class="modalContainer__date__created">
+                <p>Создана: 2021-03-02 22:57</p>
+              </div>
+            </div>
+            <p class="modalContainer__header">Для мамы</p>
+            <div class="modalInfo">
+              <div class="modalContainer__infoBlock">
+                <div class="infoBlock__inputWrapper">
+                  <textarea
+                    id="infoBlock__inputWrapper__textArea"
+                    class="infoBlock__inputWrapper__textArea"
+                    placeholder="Нужно найти до мая, пока у них свободна машина"
+                  ></textarea>
+                  <img src="../../assets/edit-grey.svg" alt="edit-grey" />
+                </div>
+                <div class="modalContainer__infoBlock__details">
+                  <span>Казань</span>
+                  <span>Аренда</span>
+                  <span>10 000 - 20 000 ₽</span>
+                </div>
+                <div class="modalContainer__infoBlock__priceArea">
+                  <p class="areaText">
+                    0 — 400 <span>м<sup>2</sup></span>
+                  </p>
+                  <p class="priceText">
+                    600 — 900
+                    <span
+                      >₽/<span>м<sup>2</sup></span></span
+                    >
+                  </p>
+                </div>
+                <div class="modalContainer__infoBlock__levelsPhone">
+                  <p>Этаж/этажность: <span>5-9/14-20</span></p>
+                  <p>Телефоны: <span>скрыты</span></p>
+                </div>
+                <div class="modalContainer__infoBlock__mobileDateCreated">
+                  <p>Создана: 2021-03-02 22:57</p>
+                </div>
+              </div>
+              <div class="modalContainer__editBlock">
+                <div class="modalContainer__editBlock__copy">
+                  <img src="../../assets/open-orange.svg" alt="open-orange" />
+                  <span>Копировать ссылку</span>
+                </div>
+                <div class="modalContainer__editBlock__edit">
+                  <img src="../../assets/edit-orange.svg" alt="edit-orange" />
+                  <span>Редактировать</span>
+                </div>
+                <div class="modalContainer__editBlock__delete">
+                  <img
+                    src="../../assets/delete-orange.svg"
+                    alt="delete-orange"
+                  />
+                  <span>Удалить</span>
+                </div>
+              </div>
+            </div>
+            <div class="modalBtns">
+              <div class="modalBtns__wrap modalBtns__wrap-clicked">
+                <span>Посмотреть объекты в подборке</span>
+              </div>
+              <div class="modalBtns__wrap">
+                <span>Поделиться подборкой</span>
+              </div>
+            </div>
+            <div class="modalContainer__back"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+    <script src="../../createCompilationPopUp.js"></script>
+  </body>
+</html>

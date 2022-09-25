@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authorization</title>
+    <link rel="stylesheet" href="authorization.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Orbitron&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <div class="logo">
+            <img src="../../assets/logo.svg" alt="logo-small" />
+            <p>Онлайн Агент</p>
+          </div>
+          <div class="city-switcher">
+            <img
+              class="map-pointer"
+              src="../../assets/map-pointer.svg"
+              alt="map-pointer"
+            />
+            <p>Казань</p>
+            <div>
+              <img src="../../assets/arrowDown.svg" alt="arrowDown" />
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="navbar__component navbar__component-clicked">
+              <img
+                class="navbar-icon"
+                src="../../assets/create.svg"
+                alt="create"
+              />
+              <p>Создать подборку</p>
+            </div>
+            <div class="navbar__component">
+              <img class="navbar-icon" src="../../assets/home.svg" alt="home" />
+              <p>Мои подборки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/documents.svg"
+                alt="documents"
+              />
+              <p>Мои заявки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/about.svg"
+                alt="about"
+              />
+              <p>О сервисе</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="authorization">
+          <div class="authorization-logo">
+            <img class="big-logo" src="../../assets/logo.svg" alt="logo-big" />
+            <p>Вход</p>
+          </div>
+          <div class="inputs">
+            <input type="text" class="login" />
+            <input type="password" class="password" />
+            <button>Войти</button>
+          </div>
+          <div class="links">
+            <p>
+              Нет аккаунта?
+              <a class="registration-link" href="">Зарегистрируйтесь</a>
+            </p>
+            <p>
+              <a class="contant-link" href="">Контакты</a>
+            </p>
+            <p>
+              <a class="termsOfUse-link" href="">Пользовательское соглашение</a>
+            </p>
+          </div>
+          <p class="copyright">© 2018-2021</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

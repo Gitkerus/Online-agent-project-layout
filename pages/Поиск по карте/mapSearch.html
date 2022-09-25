@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mapSearch</title>
+    <link rel="stylesheet" href="mapSearch.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Orbitron&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <div class="logo">
+            <img src="../../assets/logo.svg" alt="logo-small" />
+            <p>Онлайн Агент</p>
+          </div>
+          <div class="city-switcher">
+            <img
+              class="map-pointer"
+              src="../../assets/map-pointer.svg"
+              alt="map-pointer"
+            />
+            <p>Казань</p>
+            <div>
+              <img src="../../assets/arrowDown.svg" alt="arrowDown" />
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="navbar__component navbar__component-clicked">
+              <img
+                class="navbar-icon"
+                src="../../assets/create.svg"
+                alt="create"
+              />
+              <p>Создать подборку</p>
+            </div>
+            <div class="navbar__component">
+              <img class="navbar-icon" src="../../assets/home.svg" alt="home" />
+              <p>Мои подборки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/documents.svg"
+                alt="documents"
+              />
+              <p>Мои заявки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/about.svg"
+                alt="about"
+              />
+              <p>О сервисе</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="contentWrapper">
+        <div class="content__settings">
+          <div class="search">
+            <img
+              class="search__icon"
+              src="../../assets/search.svg"
+              alt="search"
+            />
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Адрес, район, станция..."
+            />
+          </div>
+          <div class="mapArea">
+            <img src="../../assets/mapArea.svg" alt="mapArea" />
+            <span>Выделить область на карте</span>
+          </div>
+          <div class="createComp">
+            <img src="../../assets/gear.svg" alt="gear" />
+            <div class="createComp__vertLine"></div>
+            <span>Создать подборку</span>
+          </div>
+          <div class="backToFilters">
+            <img
+              class="backToFilters__arrows-left"
+              src="../../assets/arrows-left.svg"
+              alt="arrows-lef"
+            />
+            <img src="../../assets/filters.svg" alt="filters" />
+            <span>Вернуться к фильтрам</span>
+          </div>
+        </div>
+        <div class="content__map">
+          <div class="content__map__btns">
+            <img src="../../assets/mapPlus.svg" alt="mapPlus" />
+            <img src="../../assets/mapMinus.svg" alt="mapMinus" />
+          </div>
+        </div>
+        <!-- Клас modalContent-open добавлен, чтобы показать модальный контейнер который можно будет привязать по нажатию на кнопку -->
+        <div class="modalContent modalContent-open">
+          <div class="modalSidebar">
+            <img src="../../assets/sideBarBtn.svg" alt="sideBarBtn" />
+          </div>
+          <div class="modalContainer">
+            <div class="modalContainer__mobileCloseLine"></div>
+            <img
+              class="modalContainer__createPopUp"
+              src="../../assets/createPopUp.svg"
+              alt="createPopUp"
+            />
+            <img
+              class="modalContainer__createPopUpMobile"
+              src="../../assets/createPopUpMobile.svg"
+              alt="createPopUpMobile"
+            />
+            <img
+              class="modalContainer__closeBtn"
+              src="../../assets/modalCloseBtn.svg"
+              alt="modalCloseBtn"
+            />
+            <div class="modalContainer__date">
+              <div class="modalContainer__date__expire">
+                <label class="custom-switcher">
+                  <input type="checkbox" class="custom-checkbox" checked />
+                  <span class="custom-slider"></span>
+                </label>
+                <p>Активна до: 29 марта 2021</p>
+              </div>
+              <div class="modalContainer__date__created">
+                <p>Создана: 2021-03-02 22:57</p>
+              </div>
+            </div>
+            <p class="modalContainer__header">Для мамы</p>
+            <div class="modalInfo">
+              <div class="modalContainer__infoBlock">
+                <div class="infoBlock__inputWrapper">
+                  <textarea
+                    id="infoBlock__inputWrapper__textArea"
+                    class="infoBlock__inputWrapper__textArea"
+                    placeholder="Нужно найти до мая, пока у них свободна машина"
+                  ></textarea>
+                  <img src="../../assets/edit-grey.svg" alt="edit-grey" />
+                </div>
+                <div class="modalContainer__infoBlock__details">
+                  <span>Казань</span>
+                  <span>Аренда</span>
+                  <span>10 000 - 20 000 ₽</span>
+                </div>
+                <div class="modalContainer__infoBlock__priceArea">
+                  <p class="areaText">
+                    0 — 400 <span>м<sup>2</sup></span>
+                  </p>
+                  <p class="priceText">
+                    600 — 900
+                    <span
+                      >₽/<span>м<sup>2</sup></span></span
+                    >
+                  </p>
+                </div>
+                <div class="modalContainer__infoBlock__levelsPhone">
+                  <p>Этаж/этажность: <span>5-9/14-20</span></p>
+                  <p>Телефоны: <span>скрыты</span></p>
+                </div>
+                <div class="modalContainer__infoBlock__mobileDateCreated">
+                  <p>Создана: 2021-03-02 22:57</p>
+                </div>
+              </div>
+              <div class="modalContainer__editBlock">
+                <div class="modalContainer__editBlock__copy">
+                  <img src="../../assets/open-orange.svg" alt="open-orange" />
+                  <span>Копировать ссылку</span>
+                </div>
+                <div class="modalContainer__editBlock__edit">
+                  <img src="../../assets/edit-orange.svg" alt="edit-orange" />
+                  <span>Редактировать</span>
+                </div>
+                <div class="modalContainer__editBlock__delete">
+                  <img
+                    src="../../assets/delete-orange.svg"
+                    alt="delete-orange"
+                  />
+                  <span>Удалить</span>
+                </div>
+              </div>
+            </div>
+            <div class="modalBtns">
+              <div class="modalBtns__wrap modalBtns__wrap-clicked">
+                <span>Посмотреть объекты в подборке</span>
+              </div>
+              <div class="modalBtns__wrap">
+                <span>Поделиться подборкой</span>
+              </div>
+            </div>
+            <div class="modalContainer__back"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

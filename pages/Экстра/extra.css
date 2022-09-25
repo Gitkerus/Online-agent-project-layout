@@ -1,0 +1,359 @@
+@import url(../../fonts.css);
+@import url(../../header.css);
+@import url(../../fonts/stylesheet.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  margin-top: 101px;
+  gap: 75px;
+  width: 66%;
+}
+
+.content__info,
+.content__instructions {
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+}
+
+.content__info__copyright {
+  margin-left: 80px;
+}
+
+.content__info__header {
+  margin-bottom: 45px;
+}
+
+.content__info__header p {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 153%;
+  letter-spacing: 0.015em;
+  color: #d49702;
+}
+
+.content__info__advice {
+  width: 350px;
+  margin-bottom: 30px;
+}
+
+.content__info__advice__header,
+.content__info__partners__header,
+.content__info__trial__header {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.184885px;
+  color: #000000;
+}
+
+.content__info__advice__text,
+.content__info__trial__text,
+.content__info__premium__text,
+.content__info__supportLink,
+.content__info__privacyLink,
+.content__info__requisitesLink,
+.content__info__copyright,
+.content__instructions__banner__tips__text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.015em;
+  color: #818181;
+}
+
+.content__info__menuMobile {
+  display: none;
+}
+
+.content__info__partners {
+  width: 350px;
+  margin-bottom: 58px;
+}
+
+.content__info__partners__header {
+  margin-bottom: 12px;
+}
+
+.content__info__partners__logos {
+  display: flex;
+  gap: 26px;
+}
+
+.content__info__premium {
+  width: 312px;
+  padding: 17px 19px 31px;
+  background: linear-gradient(141.75deg, #fed367 9.53%, #f3b519 100.2%);
+  border-radius: 7.74631px;
+  margin-bottom: 33px;
+}
+
+.content__info__premium__btn {
+  display: flex;
+  padding: 22px 0 19px;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 83.6364px;
+}
+
+.content__info__premium__btn__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #866107;
+}
+
+.content__info__premium__header {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.240842px;
+  color: #000000;
+  margin-top: 9px;
+  margin-bottom: 14px;
+}
+
+.content__info__premium__price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.content__info__premium__price__number {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.content__info__premium__price__note {
+  margin-left: 8px;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 153%;
+  letter-spacing: 0.015em;
+  color: #6a5318;
+}
+
+.content__info__privacyLink {
+  margin-bottom: 28px;
+}
+
+.content__info__privacyLink,
+.content__info__requisitesLink {
+  color: #d49702;
+  text-decoration: none;
+}
+
+.content__info__premium__text {
+  color: #6a5318;
+  margin-bottom: 11px;
+}
+
+.content__info__supportLink {
+  margin-bottom: 35px;
+}
+
+.content__info__trial {
+  width: 308px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 32px 21px 38px;
+  margin-bottom: 28px;
+}
+
+.content__info__trial__header {
+  margin-bottom: 2px;
+}
+
+.content__instructions__step {
+  margin-bottom: 48px;
+}
+
+.content__instructions__step__header {
+  margin-bottom: 9px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.374px;
+  color: #000000;
+}
+
+.content__instructions__step__text {
+  width: 300px;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.015em;
+  color: #818181;
+}
+
+.content__instructions__banner {
+  border: 1px solid #f9c43f;
+  border-radius: 10px;
+  width: 408px;
+  padding-bottom: 5px;
+}
+
+.content__instructions__banner__top {
+  background: #f9c43f;
+  border-radius: 10px;
+  padding: 40px 40px 37px 47px;
+  margin-bottom: 60px;
+}
+
+.content__instructions__banner__top__header {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 54px;
+  letter-spacing: 0.489077px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.content__instructions__banner__top__text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+
+.content__instructions__banner__tips {
+  display: flex;
+  align-items: flex-start;
+  gap: 29px;
+  margin: 0 40px 30px 50px;
+}
+
+.contentWrapper {
+  min-height: calc(100vh - 69px);
+  min-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f7f7;
+  justify-content: space-between;
+}
+
+/* Адаптив */
+
+@media screen and (max-width: 1600px) {
+  .container {
+    width: calc(50% - 80px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    width: 90%;
+    gap: 0;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: calc(100% - 65px);
+  }
+
+  .content {
+    width: calc(100% - 30px);
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .content__instructions {
+    display: none;
+  }
+
+  .content__info__header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content__info__header p {
+    width: 226px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 153%;
+    text-align: center;
+    letter-spacing: 0.015em;
+  }
+
+  .content__info__menuMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .content__info__menuMobile__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .content__info__menuMobile__logo__img {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0px 35.8554px 56.4067px rgba(183, 157, 27, 0.14))
+      drop-shadow(0px 14.9795px 23.5654px rgba(183, 157, 27, 0.0995675))
+      drop-shadow(0px 8.00877px 12.5992px rgba(183, 157, 27, 0.0684373))
+      drop-shadow(0px 4.48965px 7.06299px rgba(183, 157, 27, 0.0455659))
+      drop-shadow(0px 2.38442px 3.7511px rgba(183, 157, 27, 0.028195))
+      drop-shadow(0px 0.992211px 1.56092px rgba(183, 157, 27, 0.0136083));
+  }
+
+  .content__info__menuMobile__logo__text {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.9867px;
+    line-height: 117.9%;
+    text-align: center;
+    color: #f0b931;
+  }
+
+  .content__info__menuMobile__logo .contentWrapper {
+    min-height: 100vh;
+  }
+
+  .backMobile {
+    margin-top: 65px;
+    display: block;
+  }
+}

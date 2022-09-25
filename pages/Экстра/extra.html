@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>extra</title>
+    <link rel="stylesheet" href="extra.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Orbitron&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <div class="logo">
+            <img src="../../assets/logo.svg" alt="logo-small" />
+            <p>Онлайн Агент</p>
+          </div>
+          <div class="city-switcher">
+            <img
+              class="map-pointer"
+              src="../../assets/map-pointer.svg"
+              alt="map-pointer"
+            />
+            <p>Казань</p>
+            <div>
+              <img src="../../assets/arrowDown.svg" alt="arrowDown" />
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="navbar__component navbar__component-clicked">
+              <img
+                class="navbar-icon"
+                src="../../assets/create.svg"
+                alt="create"
+              />
+              <p>Создать подборку</p>
+            </div>
+            <div class="navbar__component">
+              <img class="navbar-icon" src="../../assets/home.svg" alt="home" />
+              <p>Мои подборки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/documents.svg"
+                alt="documents"
+              />
+              <p>Мои заявки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/about.svg"
+                alt="about"
+              />
+              <p>О сервисе</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="contentWrapper">
+        <div class="content">
+          <div class="content__info">
+            <div class="content__info__menuMobile">
+              <img
+                class="content__info__menuMobile__arrowLeft"
+                src="../../assets/arrow-left-mobile.svg"
+                alt="arrow-left-mobile"
+              />
+              <div class="content__info__menuMobile__logo">
+                <img
+                  class="content__info__menuMobile__logo__img"
+                  src="../../assets/logo.svg"
+                  alt=""
+                />
+                <span class="content__info__menuMobile__logo__text"
+                  >Онлайн <br />
+                  Агент</span
+                >
+              </div>
+              <!-- Не могу импортировать svg купона, пока ставлю заглушку -->
+              <img
+                class="content__info__menuMobile__coupon"
+                src="../../assets/arrow-left-mobile.svg"
+                alt="coupon"
+              />
+            </div>
+            <div class="content__info__header">
+              <p>Онлайн-агент подберет объекты для ваших клиентов за вас</p>
+            </div>
+            <div class="content__info__partners">
+              <p class="content__info__partners__header">
+                По одной ссылке вы получаете <br />
+                доступ к 95% предложений на рынке
+              </p>
+              <div class="content__info__partners__logos">
+                <img src="../../assets/homeLogo.svg" alt="homeLogo" />
+                <img src="../../assets/cianLogo.svg" alt="cianLogo" />
+                <img src="../../assets/domofondLogo.svg" alt="domofondLogo" />
+              </div>
+            </div>
+            <div class="content__info__advice">
+              <p class="content__info__advice__header">
+                Вы тратите свое время только <br />
+                на заинтересованных клиентов
+              </p>
+              <p class="content__info__advice__text">
+                Ваш клиент отметит интересные предложения, <br />
+                и вам придет уведомление
+              </p>
+            </div>
+            <div class="content__info__trial">
+              <p class="content__info__trial__header">Бесплатная версия</p>
+              <p class="content__info__trial__text">
+                Включает в себя до 3-х подборов <br />
+                в любых регионах
+              </p>
+            </div>
+            <div class="content__info__premium">
+              <img src="../../assets/crown.svg" alt="crown" />
+              <p class="content__info__premium__header">Полная версия</p>
+              <p class="content__info__premium__text">
+                без ограничений на количество <br />
+                подборов в одном регионе
+              </p>
+              <div class="content__info__premium__price">
+                <span class="content__info__premium__price__number"
+                  >4 990 ₽</span
+                ><span class="content__info__premium__price__note"
+                  >/навсегда</span
+                >
+              </div>
+              <div class="content__info__premium__btn">
+                <p class="content__info__premium__btn__text">
+                  Перейти на полную версию
+                </p>
+              </div>
+            </div>
+            <a class="content__info__supportLink" href=""
+              >Написать в техническую поддержку</a
+            >
+            <a class="content__info__privacyLink" href=""
+              >Политика конфиденциальности</a
+            >
+            <div>
+              <a class="content__info__requisitesLink" href="">Реквизиты</a>
+              <span class="content__info__copyright">© 2021</span>
+            </div>
+          </div>
+          <div class="content__instructions">
+            <div class="content__instructions__step">
+              <span class="content__instructions__step__header">Шаг 1</span>
+              <p class="content__instructions__step__text">
+                Настройте фильтр объектов по нужным вам параметрам
+              </p>
+            </div>
+            <div class="content__instructions__step">
+              <span class="content__instructions__step__header">Шаг 2</span>
+              <p class="content__instructions__step__text">
+                Сгенерируйте уникальную ссылку для клиента, по которой он будет
+                получать новые предложения
+              </p>
+            </div>
+            <div class="content__instructions__step">
+              <span class="content__instructions__step__header">Шаг 3</span>
+              <p class="content__instructions__step__text">
+                Пришлите ссылку вашему клиенту
+              </p>
+            </div>
+            <div class="content__instructions__banner">
+              <div class="content__instructions__banner__top">
+                <span class="content__instructions__banner__top__header"
+                  >Все!</span
+                >
+                <p class="content__instructions__banner__top__text">
+                  Пройдя по ссылке, ваш клиент начнет получать новые предложения
+                  автоматически, а предложения будут отбираться сами без вашего
+                  участия.
+                </p>
+              </div>
+              <div class="content__instructions__banner__tips">
+                <img
+                  class="content__instructions__banner__tips__icon"
+                  src="../../assets/telegram.svg"
+                  alt="telegram"
+                />
+                <p class="content__instructions__banner__tips__text">
+                  Теперь вашему клиенту в телеграм приходят сообщения с
+                  интересными ему объектами
+                </p>
+              </div>
+              <div class="content__instructions__banner__tips">
+                <img
+                  class="content__instructions__banner__tips__icon"
+                  src="../../assets/phone-crosed-orange.svg"
+                  alt="phone-orange-crosed"
+                />
+                <p class="content__instructions__banner__tips__text">
+                  Вы можете скрыть контакты <br />
+                  владельца недвижимости <br />
+                  или оставить их видимыми
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

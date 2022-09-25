@@ -1,0 +1,94 @@
+.header {
+  height: 69px;
+  width: 66%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.logo p {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.1656px;
+  line-height: 122.4%;
+  color: #f0b931;
+}
+
+.city-switcher {
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+.city-switcher p {
+  margin-right: 8px;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 153.19%;
+  letter-spacing: 0.015em;
+  color: #818181;
+}
+
+.map-pointer {
+  height: 16px;
+  width: 12px;
+  margin-right: 15px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3px;
+}
+
+.navbar__component {
+  border-radius: 40px;
+  padding: 0 24px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar__component-clicked {
+  background: #fccd5b;
+}
+
+.navbar__component p {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 153.19%;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+
+.navbar-icon {
+  height: 23px;
+  width: 23px;
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    width: 90%;
+    /* gap: 10px; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    display: none;
+  }
+}

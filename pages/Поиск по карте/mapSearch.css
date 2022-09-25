@@ -1,0 +1,871 @@
+@import url(../../fonts.css);
+@import url(../../header.css);
+@import url(../../fonts/stylesheet.css);
+@import url(../../switcher.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.backToFilters {
+  display: flex;
+  align-items: center;
+  border: 2px solid #fac543;
+  border-radius: 83.6364px;
+  width: 350px;
+  height: 74px;
+}
+
+.backToFilters span {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  color: #d49702;
+  margin-left: 39px;
+}
+
+.backToFilters__arrows-left {
+  margin-left: 28px;
+  margin-right: 13px;
+}
+
+.contentWrapper {
+  min-height: calc(100vh - 69px);
+  min-width: 380px;
+  display: flex;
+  align-items: flex-start;
+  background: #f7f7f7;
+  justify-content: flex-end;
+  gap: 66px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content__map {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: calc(100vh - 69px);
+  width: calc(50% + 44px);
+  position: relative;
+  background: url(../../assets/map.svg) no-repeat;
+  background-size: cover;
+}
+
+.content__map__btns {
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 68px;
+  height: 155px;
+}
+
+.content__settings {
+  display: flex;
+  flex-direction: column;
+  padding-top: 39px;
+}
+
+.createComp {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 69px;
+  background: #fac543;
+  border-radius: 83.6364px;
+  margin-bottom: 27px;
+}
+
+.createComp img {
+  margin-left: 28px;
+}
+
+.createComp span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175.19%;
+  letter-spacing: 0.015em;
+  color: #866107;
+}
+
+.createComp__vertLine {
+  margin: 0 42px 0 25px;
+  height: 60px;
+  opacity: 0.2;
+  border-left: 1px solid #866107;
+}
+.mapArea {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 52px;
+}
+
+.mapArea span {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #d49702;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 350px;
+  height: 55px;
+  background: #ffffff;
+  border-radius: 80px;
+  margin-bottom: 33px;
+}
+
+.search__icon {
+  height: 35px;
+  width: 35px;
+  margin-left: 15px;
+}
+
+.search__input {
+  border: none;
+  height: 25px;
+  width: 241px;
+  outline: none;
+  padding-left: 22px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: 0.818099px;
+  color: #b2b2b2;
+}
+
+.search__input::placeholder {
+  color: #c4c4c4;
+  opacity: 1;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+/* Модальный pop-up */
+
+.areaText,
+.priceText {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 153.19%;
+  letter-spacing: 0.015em;
+}
+
+.areaText span,
+.priceText span {
+  color: #d49702;
+}
+
+.areaText span {
+  font-size: 22px;
+}
+
+.areaText sup {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.priceText {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.priceText span span {
+  font-size: 16px;
+}
+
+.priceText span span sup {
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.modalBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalBtns__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 19px) / 2);
+  height: 65px;
+  border: 2px solid #fac543;
+  border-radius: 83.6364px;
+}
+
+.modalBtns__wrap > span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 175.19%;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #866107;
+}
+
+.modalBtns__wrap-clicked {
+  background: #fac543;
+}
+
+.modalContent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(111, 90, 90, 0.4);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.modalContent-open {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modalContainer {
+  width: 578px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  position: relative;
+  padding: 60px 37px 28px 60px;
+}
+
+.modalContainer__back {
+  position: absolute;
+  top: 12px;
+  left: 32px;
+  z-index: -1;
+  width: calc(100% - 64px);
+  height: 100%;
+  background: #d9d9d9;
+  box-shadow: 0px -5.68473px 60.6371px rgba(0, 0, 0, 0.25);
+  border-radius: 9.47455px;
+}
+
+.modalContainer__closeBtn {
+  position: absolute;
+  top: -48px;
+  right: -48px;
+}
+
+.modalContainer__createPopUp {
+  left: 46px;
+  top: -32px;
+  position: absolute;
+}
+
+.modalContainer__createPopUpMobile {
+  display: none;
+}
+
+.modalContainer__date {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 22px;
+}
+
+.modalContainer__date__expire {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.modalContainer__date__expire p {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9c9487;
+}
+
+.modalContainer__date__created p {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 153.19%;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+
+.modalContainer__editBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.modalContainer__editBlock span {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 153.19%;
+  letter-spacing: 0.015em;
+  color: #d49702;
+}
+
+.modalContainer__editBlock__copy,
+.modalContainer__editBlock__delete,
+.modalContainer__editBlock__edit {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.modalContainer__header {
+  margin-bottom: 28px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 37px;
+  letter-spacing: 0.340597px;
+  color: #000000;
+}
+
+.modalContainer__infoBlock__details {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 23px;
+}
+
+.modalContainer__infoBlock__details span {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.2251px;
+  line-height: 153.19%;
+  letter-spacing: 0.015em;
+  color: #818181;
+}
+
+.modalContainer__infoBlock__mobileDateCreated {
+  display: none;
+}
+
+.modalContainer__infoBlock__levelsPhone {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.modalContainer__infoBlock__levelsPhone p {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 153.19%;
+  letter-spacing: 0.015em;
+  color: #535353;
+}
+
+.modalContainer__infoBlock__levelsPhone p span {
+  color: #818181;
+}
+
+.modalContainer__infoBlock__priceArea {
+  display: flex;
+  align-items: baseline;
+  gap: 48px;
+  margin-bottom: 21px;
+}
+
+.modalInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalSidebar {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  background: #686868;
+  left: 0;
+}
+
+.modalSidebar > img {
+  margin: 26px 24px;
+}
+
+.infoBlock__inputWrapper {
+  background: #ffffff;
+  border-radius: 3.43174px;
+  padding: 10px 22px 13px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 340px;
+  margin-bottom: 54px;
+}
+
+.infoBlock__inputWrapper__textArea {
+  resize: none;
+  outline: none;
+  border: none;
+  width: 280px;
+  height: 22px;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #9c9487;
+  overflow: hidden;
+}
+
+/* Адаптив */
+
+@media screen and (max-width: 1600px) {
+  .containerWrapper {
+    width: calc(50% - 15px);
+  }
+
+  .content__container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content__header,
+  .filtration,
+  .content__container {
+    width: 90%;
+  }
+  .content__container {
+    flex-direction: column;
+    align-content: center;
+  }
+  .containerCreate {
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .backToFilters {
+    display: none;
+  }
+  .containerParams {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .containerWrapper {
+    width: 100%;
+  }
+
+  .container-rightShift {
+    transform: translateX(73px);
+  }
+
+  .container-leftShift {
+    transform: translateX(-73px);
+  }
+
+  .containerCreate {
+    background: none;
+    width: 100%;
+  }
+
+  .containerCreate__settings,
+  .containerCreate__btn {
+    margin: 0;
+  }
+
+  .containerWrapper__settingsMobile {
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .containerWrapper__settingsMobile__edit,
+  .containerWrapper__settingsMobile__delete {
+    width: 50%;
+    border-radius: 8px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .containerWrapper__settingsMobile__edit img,
+  .containerWrapper__settingsMobile__delete img {
+    vertical-align: middle;
+  }
+
+  .containerWrapper__settingsMobile__edit img {
+    margin-right: 30px;
+  }
+
+  .containerWrapper__settingsMobile__delete img {
+    margin-left: 30px;
+  }
+
+  .containerWrapper__settingsMobile__edit {
+    background: #93b2ed;
+    backdrop-filter: blur(100px);
+    justify-content: flex-end;
+  }
+
+  .containerWrapper__settingsMobile__delete {
+    background: #fa765a;
+    backdrop-filter: blur(100px);
+  }
+
+  .containerCreate__settings__name,
+  .containerCreate__settings__comment {
+    background: #ffffff;
+  }
+
+  .filtration {
+    margin-bottom: 27px;
+  }
+
+  .navbarMobile {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .containerCreateWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerCreate__btn {
+    width: 100%;
+  }
+
+  .containerCreate__btnMobileSetings div {
+    display: flex;
+  }
+
+  .containerCreate__btn {
+    margin-top: 20px;
+  }
+
+  .content {
+    margin-bottom: 26px;
+  }
+
+  .content__header,
+  .navbarMobile,
+  .filtration,
+  .content__container {
+    min-width: 346px;
+    width: calc(100% - 30px);
+  }
+
+  .content {
+    overflow: hidden;
+  }
+
+  .content__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content__header {
+    flex-direction: column;
+    margin-top: 88px;
+    margin-bottom: 28px;
+    gap: 14px;
+  }
+
+  .content__header__text {
+    text-align: center;
+    margin: 0;
+  }
+
+  .content__header__mobileCityChange {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+  }
+
+  .content__header__mobileCityChange span {
+    font-family: "Museo Sans Cyrl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 153%;
+    letter-spacing: 0.015em;
+    color: #818181;
+  }
+
+  .content__map {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .content__map__btns {
+    margin-right: 19px;
+    height: auto;
+    gap: 24px;
+    z-index: 4;
+  }
+
+  .content__map__btns img {
+    height: 48px;
+    width: 48px;
+  }
+
+  .content__settings {
+    position: absolute;
+    z-index: 2;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: calc(100vh - 93px);
+    padding-bottom: 54px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contentWrapper {
+    min-height: 100vh;
+  }
+
+  .createComp {
+    width: 100%;
+    position: absolute;
+    bottom: 54px;
+    margin: 0;
+  }
+
+  .levelsBtns__block {
+    width: 30%;
+  }
+
+  .search,
+  .mapArea {
+    margin: 0;
+  }
+
+  .mapArea {
+    height: 55px;
+  }
+
+  .mapArea span {
+    display: none;
+  }
+
+  .search__input {
+    width: calc(100% - 100px);
+  }
+
+  .search {
+    width: calc(100% - 70px);
+  }
+
+  .switcher {
+    width: 100%;
+    min-width: auto;
+    margin-left: 0;
+    gap: 0;
+  }
+
+  .switcher,
+  .realEstate,
+  .priceSwitcher,
+  .levelsBtns,
+  .subwaySearch,
+  .mapSearch {
+    margin-left: 0;
+  }
+
+  .rooms__header,
+  .price__header,
+  .area__header,
+  .levels__header {
+    padding: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .subwaySearch {
+    width: calc(100% - 40px);
+  }
+
+  .startDate__wrapper {
+    background: none;
+    gap: 0;
+    width: 110px;
+  }
+  .switcher__btn {
+    min-width: auto;
+  }
+
+  .mapSearch {
+    width: 100%;
+  }
+
+  .price,
+  .rooms,
+  .area,
+  .levels {
+    flex-wrap: wrap;
+  }
+
+  .price__inputs,
+  .area__inputs,
+  .levels__inputs,
+  .levels__inputs,
+  .levelsBtns {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .price__inputs__inputWrapper,
+  .area__inputs__inputWrapper,
+  .levels__inputs__inputWrapper {
+    width: calc(50% - 5px);
+  }
+
+  .priceSwitcher,
+  .area {
+    margin-bottom: 24px;
+  }
+
+  .rooms {
+    margin-bottom: 29px;
+  }
+
+  .modalContainer {
+    width: calc(100vw - 50px);
+    padding: 14px 25px 45px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .modalContainer__back {
+    width: calc(100% - 18px);
+    top: -8px;
+    left: 9px;
+    box-shadow: 0px -6px 64px rgba(0, 0, 0, 0.25);
+  }
+
+  .modalContainer__date__created {
+    display: none;
+  }
+
+  .modalContainer__editBlock {
+    justify-content: space-between;
+    flex-direction: row;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+  }
+
+  .modalContainer__editBlock span {
+    display: none;
+  }
+
+  .modalContainer__infoBlock__mobileDateCreated {
+    display: block;
+    width: 100%;
+    margin-bottom: 28px;
+    margin-left: 3px;
+    font-family: "Museo Sans Cyrl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 153%;
+    letter-spacing: 0.015em;
+    color: #000000;
+  }
+
+  .modalContent {
+    display: flex;
+    align-items: flex-end;
+    background: none;
+  }
+
+  .modalSidebar {
+    display: none;
+  }
+
+  .modalBtns {
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  .modalBtns__wrap {
+    width: 100%;
+  }
+
+  .modalContainer__createPopUp {
+    display: none;
+  }
+
+  .modalContainer__createPopUpMobile {
+    display: block;
+    z-index: 2;
+    left: 15px;
+    top: 37px;
+    position: absolute;
+  }
+  .modalContainer__mobileCloseLine {
+    display: block;
+    background: #c4c4c4;
+    opacity: 0.5;
+    border-radius: 30px;
+    margin: 0 auto 72px;
+    height: 4px;
+    width: calc(100% - 149px);
+  }
+
+  .modalContainer__date {
+    margin-bottom: 20px;
+  }
+
+  .modalContainer__editBlock {
+    position: absolute;
+    top: 44px;
+    left: 0px;
+  }
+  .modalInfo {
+    flex-direction: column;
+  }
+
+  .infoBlock__inputWrapper {
+    width: auto;
+    margin-bottom: 19px;
+  }
+}

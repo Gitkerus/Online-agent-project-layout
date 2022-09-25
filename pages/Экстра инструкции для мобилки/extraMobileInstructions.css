@@ -1,0 +1,185 @@
+@import url(../../fonts.css);
+@import url(../../header.css);
+@import url(../../fonts/stylesheet.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  margin-top: 101px;
+  gap: 75px;
+  width: 66%;
+}
+
+.content__instructions {
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+}
+
+.content__instructions__menuMobile {
+  display: none;
+}
+
+.content__instructions__step {
+  margin-bottom: 48px;
+}
+
+.content__instructions__step__header {
+  margin-bottom: 9px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.374px;
+  color: #000000;
+}
+
+.content__instructions__step__text {
+  width: 300px;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 153%;
+  letter-spacing: 0.015em;
+  color: #818181;
+}
+
+.content__instructions__banner {
+  border: 1px solid #f9c43f;
+  border-radius: 10px;
+  width: 408px;
+  padding-bottom: 5px;
+}
+
+.content__instructions__banner__top {
+  background: #f9c43f;
+  border-radius: 10px;
+  padding: 40px 40px 37px 47px;
+  margin-bottom: 60px;
+}
+
+.content__instructions__banner__top__header {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 54px;
+  letter-spacing: 0.489077px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.content__instructions__banner__top__text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+
+.content__instructions__banner__tips {
+  display: flex;
+  align-items: flex-start;
+  gap: 29px;
+  margin: 0 40px 30px 50px;
+}
+
+.contentWrapper {
+  min-height: calc(100vh - 69px);
+  min-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f7f7;
+  justify-content: space-between;
+}
+
+/* Адаптив */
+
+@media screen and (max-width: 1600px) {
+  .container {
+    width: calc(50% - 80px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    width: 90%;
+    gap: 0;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: calc(100% - 65px);
+  }
+
+  .content {
+    width: calc(100% - 30px);
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .content__instructions {
+    width: 100%;
+  }
+
+  .content__instructions__banner {
+    width: 100%;
+  }
+
+  .content__instructions__menuMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .content__instructions__menuMobile__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .content__instructions__menuMobile__logo__img {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0px 35.8554px 56.4067px rgba(183, 157, 27, 0.14))
+      drop-shadow(0px 14.9795px 23.5654px rgba(183, 157, 27, 0.0995675))
+      drop-shadow(0px 8.00877px 12.5992px rgba(183, 157, 27, 0.0684373))
+      drop-shadow(0px 4.48965px 7.06299px rgba(183, 157, 27, 0.0455659))
+      drop-shadow(0px 2.38442px 3.7511px rgba(183, 157, 27, 0.028195))
+      drop-shadow(0px 0.992211px 1.56092px rgba(183, 157, 27, 0.0136083));
+  }
+
+  .content__instructions__menuMobile__logo__text {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.9867px;
+    line-height: 117.9%;
+    text-align: center;
+    color: #f0b931;
+  }
+
+  .contentWrapper {
+    min-height: 100vh;
+  }
+
+  .backMobile {
+    margin-top: 65px;
+    display: block;
+  }
+}

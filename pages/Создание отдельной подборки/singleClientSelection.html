@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>singleClientSelection</title>
+    <link rel="stylesheet" href="singleClientSelection.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Orbitron&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <div class="logo">
+            <img src="../../assets/logo.svg" alt="logo-small" />
+            <p>Онлайн Агент</p>
+          </div>
+          <div class="city-switcher">
+            <img
+              class="map-pointer"
+              src="../../assets/map-pointer.svg"
+              alt="map-pointer"
+            />
+            <p>Казань</p>
+            <div>
+              <img src="../../assets/arrowDown.svg" alt="arrowDown" />
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="navbar__component navbar__component-clicked">
+              <img class="navbar-icon" src="../../assets/create.svg" alt="create" />
+              <p>Создать подборку</p>
+            </div>
+            <div class="navbar__component">
+              <img class="navbar-icon" src="../../assets/home.svg" alt="home" />
+              <p>Мои подборки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/documents.svg"
+                alt="documents"
+              />
+              <p>Мои заявки</p>
+            </div>
+            <div class="navbar__component">
+              <img class="navbar-icon" src="../../assets/about.svg" alt="about" />
+              <p>О сервисе</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="contentWrapper">
+          <div class="content">
+            <div class="backMobile">
+                <img src="../../assets/arrow-left-mobile.svg" alt="arrow-left-mobile">
+            </div>
+          <div class="content__header">
+            <p class="content__header__textMobile">Подборка</p>
+            <p class="content__header__text">Для мамы</p>
+            <div class="content__header__edit">
+              <img src="../../assets/edit-orange.svg" alt="edit-orange" />
+              <span>Редактировать подборку</span>
+            </div>
+          </div>
+          <div class="content__share">
+            <textarea
+              class="content__share__note"
+              placeholder="Нужно найти до мая, пока у них свободна машина"
+            ></textarea>
+            <div class="content__share__btn">
+              <span>Поделиться подборкой</span>
+            </div>
+        </div>
+        <div class="content__container">
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div><div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div><div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div><div class="container">
+                <div class="container__sum">
+                    <span class="container__sum__header">1-квартира</span>
+                    <div class="container__sum__info">
+                        <span>40 м<sup>2</sup> </span>
+                        <span>6/10</span>
+                        <span>15 900 ₽</span>
+                    </div>
+                </div>
+                <div class="container__adress">
+                    <span class="container__adress__info">Казань, ул. Родины, 24Б</span>
+                    <img  class="container__adress__icon" src="../../assets/subway.svg" alt="subway">
+                    <span class="container__adress__subway">Горки (384 м)</span>
+                </div>
+                <div class="container__created">
+                    <span class="container__created__owner">Игорь Актёров</span>
+                    <span class="container__created__date">29 марта 2021</span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

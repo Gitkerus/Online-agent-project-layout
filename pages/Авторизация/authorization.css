@@ -1,0 +1,151 @@
+@import url(../../fonts.css);
+@import url(../../header.css);
+@import url(../../fonts/stylesheet.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.authorization {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.authorization-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.authorization-logo p {
+  margin: 0;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.374px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.big-logo {
+  height: 95px;
+  width: 95px;
+  margin-bottom: 32px;
+  filter: drop-shadow(0px 66.438px 104.518px rgba(183, 157, 27, 0.14))
+    drop-shadow(0px 27.7562px 43.6652px rgba(183, 157, 27, 0.0995675))
+    drop-shadow(0px 14.8398px 23.3455px rgba(183, 157, 27, 0.0684373))
+    drop-shadow(0px 8.31906px 13.0873px rgba(183, 157, 27, 0.0455659))
+    drop-shadow(0px 4.41819px 6.95057px rgba(183, 157, 27, 0.028195))
+    drop-shadow(0px 1.83851px 2.89229px rgba(183, 157, 27, 0.0136083));
+}
+
+.content {
+  min-height: calc(100vh - 69px);
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 153.19%;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #818181;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs input {
+  width: 302px;
+  height: 21px;
+  padding: 16px 24px;
+  background: #ececec;
+  border-radius: 4px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.570958px;
+  color: #000000;
+  outline: none;
+  border: none;
+}
+
+.inputs button {
+  margin-top: 18px;
+  margin-bottom: 24px;
+  background: #fccd5b;
+  border-radius: 83.6364px;
+  width: 350px;
+  height: 69px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175.19%;
+  letter-spacing: 0.015em;
+  color: #000000;
+  border: none;
+}
+
+.login {
+  margin-bottom: 12px;
+}
+
+.links {
+  margin-bottom: 48px;
+}
+
+.links p {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  color: #9c9487;
+}
+
+.contant-link,
+.termsOfUse-link {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  color: #9c9487;
+}
+
+.contant-link,
+.registration-link {
+  text-decoration: none;
+}
+
+.registration-link {
+  color: #d49702;
+}
+
+/* Адаптив */
+@media screen and (max-width: 900px) {
+  .content {
+    height: 100vh;
+  }
+}

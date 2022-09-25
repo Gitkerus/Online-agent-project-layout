@@ -1,0 +1,378 @@
+@import url(../../fonts.css);
+@import url(../../header.css);
+@import url(../../fonts/stylesheet.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.archiveBtn {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 27px;
+  height: 17px;
+  width: 72px;
+  border: 1px solid #c4c4c4;
+  border-radius: 100px;
+  margin-bottom: 39px;
+}
+
+.archiveBtn__text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.2069px;
+  line-height: 17px;
+  color: #9c9487;
+}
+
+.container {
+  width: calc((100% / 3) - 60px);
+  background: linear-gradient(211.17deg, #ffffff 0%, #ffffff 100%);
+  backdrop-filter: blur(200px);
+  border-radius: 8px;
+  padding: 15px 19px 0 19px;
+}
+
+.container-archive {
+  background: #505050;
+}
+
+.container__details {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 4.6px;
+}
+
+.container__header {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+
+.container__headerText {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d49702;
+}
+
+.container__headerText-archive {
+  color: #ddb962;
+}
+
+.container__text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  color: #9c9487;
+}
+
+.container__settings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__settings__block {
+  display: flex;
+  gap: 11px;
+}
+
+.container__settings__block-delete {
+  align-items: center;
+  margin-right: 30px;
+}
+
+.container__settings__block-delete p {
+  color: #fa765a;
+}
+
+.container__settings__block-edit {
+  align-items: baseline;
+}
+
+.container__settings__block-edit p {
+  color: #93b2ed;
+}
+
+.container__underLine {
+  border-bottom: 1px solid #f2f2f2;
+  width: 100%;
+  margin: 14px auto 11px;
+}
+
+.container__underLine-archive {
+  opacity: 0.1;
+  margin-bottom: 8px;
+}
+
+.container__datePhone {
+  display: flex;
+  align-items: baseline;
+  gap: 17px;
+  margin-bottom: 6.53px;
+}
+
+.contentWrapper {
+  min-height: calc(100vh - 69px);
+  min-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f7f7;
+  justify-content: space-between;
+}
+
+.contentWrapper-archive {
+  background: #7b7b7b;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 109px;
+}
+
+.content__container {
+  display: flex;
+  gap: 21px 30px;
+  flex-wrap: wrap;
+  width: 66%;
+}
+
+.content__header {
+  margin-top: 154px;
+  width: 66%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content__header-archive {
+  flex-direction: column;
+  margin-top: 144px;
+}
+
+.content__header__text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.374px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+.content__header__text-archived {
+  color: #ffffff;
+}
+
+.content__returnBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 255px;
+  height: 45px;
+  border: 1px solid #ddb962;
+  border-radius: 100px;
+  margin-bottom: 34px;
+}
+
+.content__returnBtn__text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.3547px;
+  line-height: 15px;
+  color: #ddb962;
+}
+
+.deleteIcon {
+  height: 18px;
+  width: 17px;
+}
+
+.container__note {
+  line-height: 10px;
+}
+
+.navbarMobile {
+  display: none;
+}
+
+.switcher {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  height: 40px;
+  width: calc((100% - 60px) / 3);
+  min-width: 350px;
+  background: rgba(118, 118, 128, 0.12);
+  border-radius: 40px;
+}
+
+.switcher__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.switcher__btn-clicked {
+  background: #fac543;
+  border-radius: 40px;
+}
+
+.switcher__btn-clicked p {
+  color: #ffffff;
+}
+
+.switcher__btn__text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.592px;
+  color: rgba(60, 60, 67, 0.6);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 298px;
+  height: 46px;
+  background: #ffffff;
+  border-radius: 80px;
+}
+
+.search__icon {
+  height: 25px;
+  width: 25px;
+  margin-left: 13px;
+}
+
+.search__input {
+  border: none;
+  height: 25px;
+  width: 200px;
+  outline: none;
+  padding-left: 25px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #c4c4c4;
+}
+
+.container__note,
+.container__datePhone,
+.container__details,
+.container__settings {
+  margin-left: 28px;
+}
+
+::placeholder {
+  color: #c4c4c4;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+/* Адаптив */
+
+@media screen and (max-width: 1600px) {
+  .container {
+    width: calc(50% - 53px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content__header,
+  .content__container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: calc(100% - 38px);
+  }
+
+  .container-rightShift {
+    transform: translateX(73px);
+  }
+
+  .container-leftShift {
+    transform: translateX(-73px);
+  }
+
+  .content__returnBtn {
+    display: none;
+  }
+
+  .navbarMobile {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content__header,
+  .navbarMobile,
+  .content__container {
+    min-width: 346px;
+    width: calc(100% - 30px);
+  }
+
+  .content {
+    overflow: hidden;
+  }
+
+  .content__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content__header {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 88px;
+    margin-bottom: 18px;
+  }
+
+  .content__header__searchMobile {
+    display: block;
+  }
+
+  .contentWrapper {
+    min-height: 100vh;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .switcher {
+    width: 100%;
+    min-width: auto;
+  }
+}

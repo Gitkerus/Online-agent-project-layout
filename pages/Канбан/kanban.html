@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kanban</title>
+    <link rel="stylesheet" href="kanban.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Orbitron&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <div class="logo">
+            <img src="../../assets/logo.svg" alt="logo-small" />
+            <p>Онлайн Агент</p>
+          </div>
+          <div class="city-switcher">
+            <img
+              class="map-pointer"
+              src="../../assets/map-pointer.svg"
+              alt="map-pointer"
+            />
+            <p>Казань</p>
+            <div>
+              <img src="../../assets/arrowDown.svg" alt="arrowDown" />
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="navbar__component navbar__component-clicked">
+              <img
+                class="navbar-icon"
+                src="../../assets/create.svg"
+                alt="create"
+              />
+              <p>Создать подборку</p>
+            </div>
+            <div class="navbar__component">
+              <img class="navbar-icon" src="../../assets/home.svg" alt="home" />
+              <p>Мои подборки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/documents.svg"
+                alt="documents"
+              />
+              <p>Мои заявки</p>
+            </div>
+            <div class="navbar__component">
+              <img
+                class="navbar-icon"
+                src="../../assets/about.svg"
+                alt="about"
+              />
+              <p>О сервисе</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="contentWrapper">
+        <div class="navbarMobile">
+          <img
+            src="../../assets/sandwichBtn-mobile.svg"
+            alt="sandwichBtn-mobile"
+          />
+          <img src="../../assets/home-mobile.svg" alt="home-mobile" />
+          <img src="../../assets/create-mobile.svg" alt="create-mobile" />
+        </div>
+        <div
+          id="zoomBtnMobile"
+          class="zoomBtnMobile zoomBtnMobile-zoomOut"
+        ></div>
+        <div class="content">
+          <div class="content__header">
+            <p class="content__header__text">Мои Заявки</p>
+          </div>
+          <div id="kanbanWrapper" class="kanbanWrapper">
+            <div class="content__switcher">
+              <div class="content__switcher__btn content__switcher__btn-grey">
+                <p class="content__switcher__btn__text">Новые обращения</p>
+              </div>
+              <div
+                class="content__switcher__btn content__switcher__btn-clicked"
+              >
+                <p class="content__switcher__btn__text">В работе</p>
+              </div>
+              <div class="content__switcher__btn">
+                <p class="content__switcher__btn__text">Архив</p>
+              </div>
+            </div>
+            <div class="content__container">
+              <div class="kanban__block">
+                <div class="container">
+                  <div class="container__header">
+                    <img src="../../assets/open.svg" alt="open" />
+                    <p class="container__headerText">Для мамы</p>
+                  </div>
+                  <p class="container__text container__note">
+                    г. Казань, ул. Пушкина, д. Колотушкина 12
+                  </p>
+                  <div class="container__underLine"></div>
+                  <div class="container__datePhone">
+                    <p class="container__text">29 марта 2021</p>
+                    <p class="container__phone">+7 (912) 123-45-45</p>
+                  </div>
+                  <div class="container__settings">
+                    <div
+                      class="container__settings__block container__settings__block-edit"
+                    >
+                      <img src="../../assets/edit.svg" alt="edit" />
+                      <p class="container__text">Посмотреть подборку</p>
+                    </div>
+                    <div
+                      class="container__settings__block container__settings__block-delete"
+                    >
+                      <img
+                        class="deleteIcon"
+                        src="../../assets/delete.svg"
+                        alt="delete"
+                      />
+                      <p class="container__text">Удалить обращение</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="container__header">
+                    <img src="../../assets/open.svg" alt="open" />
+                    <p class="container__headerText">Для мамы</p>
+                  </div>
+                  <p class="container__text container__note">
+                    г. Казань, ул. Пушкина, д. Колотушкина 12
+                  </p>
+                  <div class="container__underLine"></div>
+                  <div class="container__datePhone">
+                    <p class="container__text">29 марта 2021</p>
+                    <p class="container__phone">+7 (912) 123-45-45</p>
+                  </div>
+                  <div class="container__settings">
+                    <div
+                      class="container__settings__block container__settings__block-edit"
+                    >
+                      <img src="../../assets/edit.svg" alt="edit" />
+                      <p class="container__text">Посмотреть подборку</p>
+                    </div>
+                    <div
+                      class="container__settings__block container__settings__block-delete"
+                    >
+                      <img
+                        class="deleteIcon"
+                        src="../../assets/delete.svg"
+                        alt="delete"
+                      />
+                      <p class="container__text">Удалить обращение</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="container__header">
+                    <img src="../../assets/open.svg" alt="open" />
+                    <p class="container__headerText">Для мамы</p>
+                  </div>
+                  <p class="container__text container__note">
+                    г. Казань, ул. Пушкина, д. Колотушкина 12
+                  </p>
+                  <div class="container__underLine"></div>
+                  <div class="container__datePhone">
+                    <p class="container__text">29 марта 2021</p>
+                    <p class="container__phone">+7 (912) 123-45-45</p>
+                  </div>
+                  <div class="container__settings">
+                    <div
+                      class="container__settings__block container__settings__block-edit"
+                    >
+                      <img src="../../assets/edit.svg" alt="edit" />
+                      <p class="container__text">Посмотреть подборку</p>
+                    </div>
+                    <div
+                      class="container__settings__block container__settings__block-delete"
+                    >
+                      <img
+                        class="deleteIcon"
+                        src="../../assets/delete.svg"
+                        alt="delete"
+                      />
+                      <p class="container__text">Удалить обращение</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="container__header">
+                    <img src="../../assets/open.svg" alt="open" />
+                    <p class="container__headerText">Для мамы</p>
+                  </div>
+                  <p class="container__text container__note">
+                    г. Казань, ул. Пушкина, д. Колотушкина 12
+                  </p>
+                  <div class="container__underLine"></div>
+                  <div class="container__datePhone">
+                    <p class="container__text">29 марта 2021</p>
+                    <p class="container__phone">+7 (912) 123-45-45</p>
+                  </div>
+                  <div class="container__settings">
+                    <div
+                      class="container__settings__block container__settings__block-edit"
+                    >
+                      <img src="../../assets/edit.svg" alt="edit" />
+                      <p class="container__text">Посмотреть подборку</p>
+                    </div>
+                    <div
+                      class="container__settings__block container__settings__block-delete"
+                    >
+                      <img
+                        class="deleteIcon"
+                        src="../../assets/delete.svg"
+                        alt="delete"
+                      />
+                      <p class="container__text">Удалить обращение</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="kanban__block">
+                <div class="container">
+                  <div class="container__header">
+                    <img src="../../assets/open.svg" alt="open" />
+                    <p class="container__headerText">Для мамы</p>
+                  </div>
+                  <p class="container__text container__note">
+                    г. Казань, ул. Пушкина, д. Колотушкина 12
+                  </p>
+                  <div class="container__underLine"></div>
+                  <div class="container__datePhone">
+                    <p class="container__text">29 марта 2021</p>
+                    <p class="container__phone">+7 (912) 123-45-45</p>
+                  </div>
+                  <div class="container__settings">
+                    <div
+                      class="container__settings__block container__settings__block-edit"
+                    >
+                      <img src="../../assets/edit.svg" alt="edit" />
+                      <p class="container__text">Посмотреть подборку</p>
+                    </div>
+                    <div
+                      class="container__settings__block container__settings__block-delete"
+                    >
+                      <img
+                        class="deleteIcon"
+                        src="../../assets/delete.svg"
+                        alt="delete"
+                      />
+                      <p class="container__text">Удалить обращение</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="kanban__block">
+                <div class="container">
+                  <div class="container__header">
+                    <img src="../../assets/open.svg" alt="open" />
+                    <p class="container__headerText">Для мамы</p>
+                  </div>
+                  <p class="container__text container__note">
+                    г. Казань, ул. Пушкина, д. Колотушкина 12
+                  </p>
+                  <div class="container__underLine"></div>
+                  <div class="container__datePhone">
+                    <p class="container__text">29 марта 2021</p>
+                    <p class="container__phone">+7 (912) 123-45-45</p>
+                  </div>
+                  <div class="container__settings">
+                    <div
+                      class="container__settings__block container__settings__block-edit"
+                    >
+                      <img src="../../assets/edit.svg" alt="edit" />
+                      <p class="container__text">Посмотреть подборку</p>
+                    </div>
+                    <div
+                      class="container__settings__block container__settings__block-delete"
+                    >
+                      <img
+                        class="deleteIcon"
+                        src="../../assets/delete.svg"
+                        alt="delete"
+                      />
+                      <p class="container__text">Удалить обращение</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="container__header">
+                    <img src="../../assets/open.svg" alt="open" />
+                    <p class="container__headerText">Для мамы</p>
+                  </div>
+                  <p class="container__text container__note">
+                    г. Казань, ул. Пушкина, д. Колотушкина 12
+                  </p>
+                  <div class="container__underLine"></div>
+                  <div class="container__datePhone">
+                    <p class="container__text">29 марта 2021</p>
+                    <p class="container__phone">+7 (912) 123-45-45</p>
+                  </div>
+                  <div class="container__settings">
+                    <div
+                      class="container__settings__block container__settings__block-edit"
+                    >
+                      <img src="../../assets/edit.svg" alt="edit" />
+                      <p class="container__text">Посмотреть подборку</p>
+                    </div>
+                    <div
+                      class="container__settings__block container__settings__block-delete"
+                    >
+                      <img
+                        class="deleteIcon"
+                        src="../../assets/delete.svg"
+                        alt="delete"
+                      />
+                      <p class="container__text">Удалить обращение</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../kanban.js"></script>
+  </body>
+</html>
