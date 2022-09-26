@@ -255,6 +255,69 @@
   line-height: 10px;
 }
 
+.navbarMobile {
+  display: none;
+}
+
+.container__note,
+.container__datePhone,
+.container__details,
+.container__settings {
+  margin-left: 28px;
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+/* Модальный pop-up */
+
+.areaText,
+.priceText {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 153.19%;
+  letter-spacing: 0.015em;
+}
+
+.areaText span,
+.priceText span {
+  color: #d49702;
+}
+
+.areaText span {
+  font-size: 22px;
+}
+
+.areaText sup {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.priceText {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.priceText span span {
+  font-size: 16px;
+}
+
+.priceText span span sup {
+  font-weight: 700;
+  font-size: 10px;
+}
+
 .infoBlock__inputWrapper {
   background: #a7a7a7;
   border-radius: 3.43174px;
@@ -415,6 +478,10 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
+.modalContainer__infoBlock__mobileDateCreated {
+  display: none;
+}
+
 .modalContainer__infoBlock__priceArea {
   display: flex;
   align-items: baseline;
@@ -422,96 +489,166 @@
   margin-bottom: 21px;
 }
 
+.modalContainer__mobileCloseLine {
+  display: none;
+}
+
 .modalInfo {
   display: flex;
   justify-content: space-between;
 }
 
-.switcher {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  height: 40px;
-  width: calc((100% - 60px) / 3);
-  min-width: 350px;
-  background: rgba(118, 118, 128, 0.12);
-  border-radius: 40px;
+/* Адаптив */
+
+@media screen and (max-width: 1600px) {
+  .containerWrapper {
+    width: calc(50% - 15px);
+  }
 }
 
-.switcher__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+@media screen and (max-width: 1280px) {
+  .content__header,
+  .filtration,
+  .content__container {
+    width: 90%;
+  }
 }
 
-.switcher__btn-clicked {
-  background: #fac543;
-  border-radius: 40px;
-}
+@media screen and (max-width: 900px) {
+  .container {
+    width: calc(100% - 38px);
+  }
 
-.switcher__btn-clicked p {
-  color: #ffffff;
-}
+  .container-rightShift {
+    transform: translateX(73px);
+  }
 
-.switcher__btn__text {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.592px;
-  color: rgba(60, 60, 67, 0.6);
-}
+  .container-leftShift {
+    transform: translateX(-73px);
+  }
 
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 298px;
-  height: 46px;
-  background: #ffffff;
-  border-radius: 80px;
-}
+  .content__returnBtn {
+    display: none;
+  }
 
-.search__icon {
-  height: 25px;
-  width: 25px;
-  margin-left: 13px;
-}
+  .navbarMobile {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.search__input {
-  border: none;
-  height: 25px;
-  width: 200px;
-  outline: none;
-  padding-left: 25px;
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
+  .content__header,
+  .navbarMobile,
+  .content__container {
+    min-width: 346px;
+    width: calc(100% - 30px);
+  }
 
-.container__note,
-.container__datePhone,
-.container__details,
-.container__settings {
-  margin-left: 28px;
-}
+  .content {
+    overflow: hidden;
+  }
 
-::placeholder {
-  color: #ffffff;
-  opacity: 1;
-}
+  .content__container {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-:-ms-input-placeholder {
-  color: #ffffff;
-}
+  .content__header {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 88px;
+    margin-bottom: 18px;
+  }
 
-::-ms-input-placeholder {
-  color: #ffffff;
+  .content__header__searchMobile {
+    display: block;
+  }
+
+  .contentWrapper {
+    min-height: 100vh;
+  }
+
+  .infoBlock__inputWrapper {
+    width: auto;
+    margin-bottom: 19px;
+  }
+
+  .modalContainer {
+    width: calc(100vw - 50px);
+    padding: 14px 25px 45px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .modalContainer__back {
+    width: calc(100% - 18px);
+    top: -8px;
+    left: 9px;
+    box-shadow: 0px -6px 64px rgba(0, 0, 0, 0.25);
+  }
+
+  .modalContainer__closeBtn {
+    display: none;
+  }
+
+  .modalContainer__infoBlock__details {
+    margin-bottom: 20px;
+  }
+
+  .modalContainer__date {
+    display: none;
+  }
+
+  .modalContainer__infoBlock__levelsPhone {
+    margin-bottom: 24px;
+  }
+
+  .modalContainer__infoBlock__mobileDateCreated {
+    display: block;
+    width: 100%;
+    margin-bottom: 73px;
+    margin-left: 3px;
+    font-family: "Museo Sans Cyrl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 153%;
+    letter-spacing: 0.015em;
+    color: #000000;
+  }
+
+  .modalContainer__editBlock {
+    justify-content: space-between;
+    flex-direction: row;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+  }
+
+  .modalContainer__editBlock span {
+    display: none;
+  }
+
+  .modalContainer__header {
+    margin-bottom: 10px;
+  }
+
+  .modalContainer__mobileCloseLine {
+    display: block;
+    background: #c4c4c4;
+    opacity: 0.5;
+    border-radius: 30px;
+    margin: 0 auto 28px;
+    height: 4px;
+    width: calc(100% - 149px);
+  }
+
+  .modalContent {
+    display: flex;
+    align-items: flex-end;
+    background: none;
+  }
+
+  .modalInfo {
+    flex-direction: column;
+  }
 }

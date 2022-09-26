@@ -208,75 +208,6 @@
   display: none;
 }
 
-.switcher {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  height: 40px;
-  width: calc((100% - 60px) / 3);
-  min-width: 350px;
-  background: rgba(118, 118, 128, 0.12);
-  border-radius: 40px;
-}
-
-.switcher__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
-.switcher__btn-clicked {
-  background: #fac543;
-  border-radius: 40px;
-}
-
-.switcher__btn-clicked p {
-  color: #ffffff;
-}
-
-.switcher__btn__text {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.592px;
-  color: rgba(60, 60, 67, 0.6);
-}
-
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 298px;
-  height: 46px;
-  background: #ffffff;
-  border-radius: 80px;
-}
-
-.search__icon {
-  height: 25px;
-  width: 25px;
-  margin-left: 13px;
-}
-
-.search__input {
-  border: none;
-  height: 25px;
-  width: 200px;
-  outline: none;
-  padding-left: 25px;
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #c4c4c4;
-}
-
 .container__note,
 .container__datePhone,
 .container__details,
@@ -365,14 +296,5 @@
 
   .contentWrapper {
     min-height: 100vh;
-  }
-
-  .search {
-    display: none;
-  }
-
-  .switcher {
-    width: 100%;
-    min-width: auto;
   }
 }
