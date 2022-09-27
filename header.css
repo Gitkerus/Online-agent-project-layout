@@ -65,7 +65,7 @@
   background: #fccd5b;
 }
 
-.navbar__component p {
+.navbar__component__link {
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 400;
@@ -73,6 +73,7 @@
   line-height: 153.19%;
   letter-spacing: 0.015em;
   color: #000000;
+  text-decoration: none;
 }
 
 .navbar-icon {

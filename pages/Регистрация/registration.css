@@ -66,14 +66,16 @@
   color: #818181;
 }
 
-.inputs {
+.signIn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.inputs input {
+.signIn__name,
+.signIn__login,
+.signIn__password {
   width: 302px;
   height: 21px;
   padding: 16px 24px;
@@ -90,7 +92,7 @@
   border: none;
 }
 
-.inputs button {
+.signIn__button {
   margin-top: 18px;
   margin-bottom: 24px;
   background: #fccd5b;
@@ -107,11 +109,11 @@
   border: none;
 }
 
-.login {
+.signIn__login {
   margin-bottom: 12px;
 }
 
-.name {
+.signIn__name {
   margin-bottom: 12px;
 }
 .links {
